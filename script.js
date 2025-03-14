@@ -3,7 +3,7 @@ function changeContent(section) {
     const sections = {
         "nyitvatartas": `
             <h2>Nyitvatartás</h2>
-            <table >
+            <table>
                 <tr>
                     <th>Hétfő</th>
                     <th>Kedd</th>
@@ -48,7 +48,6 @@ function changeContent(section) {
             <h2>Cím</h2>
             <p>1051 Budapest, Fő utca 1.</p>
             <iframe id="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1340.7725387273722!2d19.05132!3d47.49801!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4741dc3bbd9e8e4b%3A0x6a0c3f1778dc0b74!2sF%C5%91%20utca%201%2C%20Budapest%2C%201051!5e0!3m2!1shu!2shu!4v1648621234567"></iframe>
- 
         `,
         "kozossegi_media": `
             <h2>Közösségi Média</h2>
@@ -71,3 +70,13 @@ function changeContent(section) {
     };
     content.innerHTML = sections[section] || "<h2>Válassz egy témát!</h2>";
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+    const buttons = document.querySelectorAll(".aside-link");
+    buttons.forEach(button => {
+        button.addEventListener("click", function () {
+            buttons.forEach(btn => btn.classList.remove("active"));
+            this.classList.add("active");
+        });
+    });
+});

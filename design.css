@@ -80,7 +80,6 @@ aside {
 .aside-link {
     display: block;
     padding: 10px;
-    color: #205781;
     text-decoration: none;
     font-weight: bold;
     transition: background 0.3s;
@@ -91,8 +90,13 @@ aside {
     width: 100%;
 }
 
-.aside-link:hover {
+.aside-link.active {
     background-color: #98d2c0;
+    color: #000;
+}
+
+.aside-link:hover {
+    background-color: #4F959D;
 }
 
 table {
@@ -122,7 +126,7 @@ tr:nth-child(all) td {
     background-color: #f8f8f8;
 }
 
-td:hover, th:hover {
+td:hover{
     background-color: #98d2c0;
     color: #205781;
     cursor: default;
@@ -135,10 +139,6 @@ td:hover, th:hover {
 
 .listaelem {
     list-style-type: none;
-    padding: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
 }
 
 #facebook_icon, #instagram_icon, #twitter_icon, #tiktok_icon, #phone_icon, #email_icon {
@@ -174,21 +174,16 @@ td:hover, th:hover {
     background-image: url('media/mail.png');
 }
 
-#contact_illu {
-    width: 300px;
-    height: auto;
-    float: right;
-    margin: 0px;
-    position: absolute;
-    top: 0px;
-    right: 20px;
-}
-
 a {
     text-decoration: none;
     color: #205781;
 }
 
-.content {
-    position: relative;
+img {
+    width: 300px;
+    height: auto;
+}
+
+html {
+    overflow-y: scroll;
 }
