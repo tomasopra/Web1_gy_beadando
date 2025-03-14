@@ -64,15 +64,131 @@ footer {
 }
 
 aside {
-    width: 20%;
+    width: 15%;
     background: #f6f8d5;
     padding: 20px;
     border-right: 3px solid #000000;
 }
 
 .content {
-    width: 80%;
+    width: 85%;
     background: #f6f8d5;
     padding: 20px;
     flex-grow: 1;
+}
+
+.aside-link {
+    display: block;
+    padding: 10px;
+    color: #205781;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+    border: none;
+    background: none;
+    cursor: pointer;
+    text-align: left;
+    width: 100%;
+}
+
+.aside-link:hover {
+    background-color: #98d2c0;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    margin: 20px 0;
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+th {
+    background-color: #205781;
+    color: white;
+    padding: 15px;
+    border: 1px solid #205781;
+    transition: background-color 0.3s ease;
+}
+
+td {
+    padding: 12px;
+    border: 1px solid #e0e0e0;
+    transition: background-color 0.3s ease;
+}
+
+tr:nth-child(all) td {
+    background-color: #f8f8f8;
+}
+
+td:hover, th:hover {
+    background-color: #98d2c0;
+    color: #205781;
+    cursor: default;
+}
+
+#maps {
+    width:100%;
+    height:450px;
+}
+
+.listaelem {
+    list-style-type: none;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#facebook_icon, #instagram_icon, #twitter_icon, #tiktok_icon, #phone_icon, #email_icon {
+    list-style-image: none;
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 30px;
+    line-height: 20px;
+}
+
+#facebook_icon {
+    background-image: url('media/fb.png');
+}
+
+#instagram_icon {
+    background-image: url('media/insta.png');
+}
+
+#twitter_icon {
+    background-image: url('media/x.png');
+}
+
+#tiktok_icon {
+    background-image: url('media/tiktok.png');
+}
+
+#phone_icon {
+    background-image: url('media/phone.png');
+}   
+
+#email_icon {
+    background-image: url('media/mail.png');
+}
+
+#contact_illu {
+    width: 300px;
+    height: auto;
+    float: right;
+    margin: 0px;
+    position: absolute;
+    top: 0px;
+    right: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #205781;
+}
+
+.content {
+    position: relative;
 }
