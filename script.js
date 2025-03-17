@@ -1,6 +1,52 @@
 function changeContent(section) {
     const content = document.getElementById("content");
     const sections = {
+        "rolunk": `
+            <h2>Rólunk</h2>
+            <p>Az OldTimerCarShop Bt. 2010 óta foglalkozik klasszikus autók értékesítésével, bérlésével és szervizelésével. 
+            Célunk, hogy a klasszikus autók szerelmeseinek megfelelő minőségű szolgáltatásokat nyújtsunk.</p>
+            <div class="carousel-container">
+                <div class="carousel">
+                    <img src="media/car1.jpg" alt="Klasszikus autó 1" class="carousel-img active">
+                    <img src="media/car2.jpg" alt="Klasszikus autó 2" class="carousel-img">
+                    <img src="media/car3.jpg" alt="Klasszikus autó 3" class="carousel-img">
+                </div>
+                <button class="carousel-btn prev" onclick="changeSlide(-1)">❮</button>
+                <button class="carousel-btn next" onclick="changeSlide(1)">❯</button>
+                <div class="carousel-dots">
+                    <span class="dot active" onclick="goToSlide(0)"></span>
+                    <span class="dot" onclick="goToSlide(1)"></span>
+                    <span class="dot" onclick="goToSlide(2)"></span>
+                </div>
+            </div>
+        `,
+        "szolgaltatasok": `
+            <h2>Szolgáltatásaink</h2>
+            <ul class="lista">
+                <li class="listaelem">Klasszikus autók értékesítése</li>
+                <li class="listaelem">Régimódi járművek bérlése</li>
+                <li class="listaelem">Szakértői tanácsadás</li>
+                <li class="listaelem">Teljes körű szerviz szolgáltatás</li>
+            </ul>
+            <img src="media/service.jpg" alt="Szerviz">
+        `,
+        "referenciak": `
+            <h2>Referenciák</h2>
+            <div class="referencia-grid">
+                <div class="referencia-item">
+                    <img src="media/ref1.jpg" alt="Referencia 1">
+                    <p>1967-es Ford Mustang restaurálás</p>
+                </div>
+                <div class="referencia-item">
+                    <img src="media/ref2.jpg" alt="Referencia 2">
+                    <p>1972-es Volkswagen Beetle felújítás</p>
+                </div>
+                <div class="referencia-item">
+                    <img src="media/ref3.jpg" alt="Referencia 3">
+                    <p>1965-ös Chevrolet Impala szerviz</p>
+                </div>
+            </div>
+        `,
         "nyitvatartas": `
             <h2>Nyitvatartás</h2>
             <table>
@@ -69,6 +115,48 @@ function changeContent(section) {
         `
     };
     content.innerHTML = sections[section] || "<h2>Válassz egy témát!</h2>";
+    
+    // Ha a "rolunk" szekciót töltöttük be, indítsuk el az automatikus váltást
+    if (section === "rolunk") {
+        startAutoSlide();
+    }
+}
+
+let currentSlide = 0;
+let slideInterval;
+
+function changeSlide(direction) {
+    const slides = document.querySelectorAll('.carousel-img');
+    const dots = document.querySelectorAll('.dot');
+    
+    // Távolítsuk el az aktív osztályt minden képről és pontról
+    slides.forEach(slide => slide.classList.remove('active'));
+    dots.forEach(dot => dot.classList.remove('active'));
+    
+    // Számoljuk ki az új indexet
+    currentSlide = (currentSlide + direction + slides.length) % slides.length;
+    
+    // Állítsuk be az új aktív képet és pontot
+    slides[currentSlide].classList.add('active');
+    dots[currentSlide].classList.add('active');
+    
+    // Újraindítsuk az automatikus váltást
+    resetAutoSlide();
+}
+
+function goToSlide(index) {
+    const slides = document.querySelectorAll('.carousel-img');
+    const direction = index - currentSlide;
+    changeSlide(direction);
+}
+
+function startAutoSlide() {
+    slideInterval = setInterval(() => changeSlide(1), 5000); // 5 másodpercenként vált
+}
+
+function resetAutoSlide() {
+    clearInterval(slideInterval);
+    startAutoSlide();
 }
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -79,4 +167,16 @@ document.addEventListener("DOMContentLoaded", function () {
             this.classList.add("active");
         });
     });
+
+    // Ellenőrizzük, hogy a főoldalon vagyunk-e
+    const currentPage = window.location.pathname.split('/').pop();
+    if (currentPage === 'Fooldal.html' || currentPage === '') {
+        // Automatikusan betöltjük a "Rólunk" szekciót
+        changeContent('rolunk');
+        // Az első gombot aktívként jelöljük
+        const firstButton = document.querySelector('.aside-link');
+        if (firstButton) {
+            firstButton.classList.add('active');
+        }
+    }
 });

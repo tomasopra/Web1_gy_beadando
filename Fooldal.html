@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Auto shop</title>
     <link rel="stylesheet" href="design.css">
+    <script src="script.js"></script>
 </head>
 <body>
     <header>
@@ -19,10 +20,12 @@
     </nav>
     <div class="container">
         <aside>
-            <p>Oldalsáv tartalma</p>
+            <button class="aside-link" onclick="changeContent('rolunk')">Rólunk</button>
+            <button class="aside-link" onclick="changeContent('szolgaltatasok')">Szolgáltatásaink</button>
+            <button class="aside-link" onclick="changeContent('referenciak')">Referenciák</button>
         </aside>
-        <div class="content">
-
+        <div class="content" id="content">
+            <h2>Válassz egy témát!</h2>
         </div>
     </div>    
     <footer>
