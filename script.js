@@ -53,16 +53,16 @@ function changeContent(section) {
             <h2>Közösségi Média</h2>
             <ul class="lista">
                 <li class="listaelem" id="facebook_icon"
-                    <p><a href='#'>Facebook</a></p>
+                    <p><a href='https://www.facebook.com/'>Facebook</a></p>
                 </li>
                 <li class="listaelem" id="instagram_icon"
-                    <p><a href="#">Instagram</a></p>
+                    <p><a href='https://www.instagram.com'>Instagram</a></p>
                 </li>
                 <li class="listaelem" id="twitter_icon"
-                    <p><a href="#">Twitter / X</a></p>
+                    <p><a href='https://x.com/'>Twitter / X</a></p>
                 </li>
                 <li class="listaelem" id="tiktok_icon"
-                    <p><a href="#">TikTok</a></p>
+                    <p><a href='https://www.tiktok.com/'>TikTok</a></p>
                 </li>
             </ul>
             <img id="social_illu" src="media/social.jpg">
