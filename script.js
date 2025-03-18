@@ -23,22 +23,22 @@ function changeContent(section) {
         "szolgaltatasok": `
             <h2>Szolgáltatásaink</h2>
             <div class="szolgaltatas-grid">
-                <div class="szolgaltatas-item">
+                <div class="szolgaltatas-item" onclick="window.location.href='Vasarlas.html'">
                     <img src="media/vasarlas.jpg" alt="Klasszikus autók értékesítése">
                     <h3>Klasszikus autók értékesítése</h3>
                     <p>Kiváló állapotú, gondosan kiválogatott klasszikus autók értékesítése.</p>
                 </div>
-                <div class="szolgaltatas-item">
+                <div class="szolgaltatas-item" onclick="window.location.href='Berles.html'">
                     <img src="media/berles.jpg" alt="Régimódi járművek bérlése">
                     <h3>Régimódi járművek bérlése</h3>
                     <p>Rövid és hosszú távú bérlési lehetőségek klasszikus járműveinkkel.</p>
                 </div>
-                <div class="szolgaltatas-item">
+                <div class="szolgaltatas-item" onclick="window.location.href='Kapcsolat.html'">
                     <img src="media/tanacsadas.jpg" alt="Szakértői tanácsadás">
                     <h3>Szakértői tanácsadás</h3>
                     <p>Professzionális tanácsadás klasszikus autók vásárlásával és karbantartásával kapcsolatban.</p>
                 </div>
-                <div class="szolgaltatas-item">
+                <div class="szolgaltatas-item" onclick="window.location.href='Szerviz.html'">
                     <img src="media/szerviz.jpg" alt="Teljes körű szerviz szolgáltatás">
                     <h3>Teljes körű szerviz szolgáltatás</h3>
                     <p>Kiváló minőségű szervizelés és karbantartás klasszikus járművekhöz.</p>
@@ -107,8 +107,8 @@ function changeContent(section) {
         `,
         "cim": `
             <h2>Cím</h2>
-            <p>1051 Budapest, Fő utca 1.</p>
-            <iframe id="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1340.7725387273722!2d19.05132!3d47.49801!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4741dc3bbd9e8e4b%3A0x6a0c3f1778dc0b74!2sF%C5%91%20utca%201%2C%20Budapest%2C%201051!5e0!3m2!1shu!2shu!4v1648621234567"></iframe>
+            <p>6000 Kecskemét, Izsáki út 10.</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1363.184248543157!2d19.66780071926314!3d46.89547084867401!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4743da7a6c479e1d%3A0xc8292b3f6dc69e7f!2sNeumann%20J%C3%A1nos%20Egyetem%20GAMF%20M%C5%B1szaki%20%C3%A9s%20Informatikai%20Kar!5e0!3m2!1shu!2shu!4v1742300783712!5m2!1shu!2shu" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         `,
         "kozossegi_media": `
             <h2>Közösségi Média</h2>
