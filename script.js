@@ -129,7 +129,7 @@ function changeContent(section) {
             <img id="social_illu" src="media/social.jpg">
         `
     };
-    content.innerHTML = sections[section] || "<h2>Válassz egy témát!</h2>";
+    content.innerHTML = sections[section];
     
     // Ha a "rolunk" szekciót töltöttük be, inicializáljuk a carousel-t
     if (section === "rolunk") {
@@ -212,6 +212,15 @@ document.addEventListener("DOMContentLoaded", function () {
     if (currentPage === 'Fooldal.html' || currentPage === '') {
         // Automatikusan betöltjük a "Rólunk" szekciót
         changeContent('rolunk');
+        // Az első gombot aktívként jelöljük
+        const firstButton = document.querySelector('.aside-link');
+        if (firstButton) {
+            firstButton.classList.add('active');
+        }
+    //Ellenőrizzük, hogy a kapcsolat oldalon vagyunk-e
+    } else if (currentPage === 'Kapcsolat.html') {
+        // Automatikusan betöltjük az "Elérhetőség" szekciót
+        changeContent('elerhetoseg');
         // Az első gombot aktívként jelöljük
         const firstButton = document.querySelector('.aside-link');
         if (firstButton) {
