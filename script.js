@@ -22,13 +22,28 @@ function changeContent(section) {
         `,
         "szolgaltatasok": `
             <h2>Szolgáltatásaink</h2>
-            <ul class="lista">
-                <li class="listaelem">Klasszikus autók értékesítése</li>
-                <li class="listaelem">Régimódi járművek bérlése</li>
-                <li class="listaelem">Szakértői tanácsadás</li>
-                <li class="listaelem">Teljes körű szerviz szolgáltatás</li>
-            </ul>
-            <img src="media/service.jpg" alt="Szerviz">
+            <div class="szolgaltatas-grid">
+                <div class="szolgaltatas-item">
+                    <img src="media/vasarlas.jpg" alt="Klasszikus autók értékesítése">
+                    <h3>Klasszikus autók értékesítése</h3>
+                    <p>Kiváló állapotú, gondosan kiválogatott klasszikus autók értékesítése.</p>
+                </div>
+                <div class="szolgaltatas-item">
+                    <img src="media/berles.jpg" alt="Régimódi járművek bérlése">
+                    <h3>Régimódi járművek bérlése</h3>
+                    <p>Rövid és hosszú távú bérlési lehetőségek klasszikus járműveinkkel.</p>
+                </div>
+                <div class="szolgaltatas-item">
+                    <img src="media/tanacsadas.jpg" alt="Szakértői tanácsadás">
+                    <h3>Szakértői tanácsadás</h3>
+                    <p>Professzionális tanácsadás klasszikus autók vásárlásával és karbantartásával kapcsolatban.</p>
+                </div>
+                <div class="szolgaltatas-item">
+                    <img src="media/szerviz.jpg" alt="Teljes körű szerviz szolgáltatás">
+                    <h3>Teljes körű szerviz szolgáltatás</h3>
+                    <p>Kiváló minőségű szervizelés és karbantartás klasszikus járművekhöz.</p>
+                </div>
+            </div>
         `,
         "referenciak": `
             <h2>Referenciák</h2>
@@ -116,8 +131,32 @@ function changeContent(section) {
     };
     content.innerHTML = sections[section] || "<h2>Válassz egy témát!</h2>";
     
-    // Ha a "rolunk" szekciót töltöttük be, indítsuk el az automatikus váltást
+    // Ha a "rolunk" szekciót töltöttük be, inicializáljuk a carousel-t
     if (section === "rolunk") {
+        // Állítsuk vissza a currentSlide változót
+        currentSlide = 0;
+        
+        // Állítsuk be az első képet és pontot aktívként
+        const slides = document.querySelectorAll('.carousel-img');
+        const dots = document.querySelectorAll('.dot');
+        
+        slides.forEach((slide, index) => {
+            if (index === 0) {
+                slide.classList.add('active');
+            } else {
+                slide.classList.remove('active');
+            }
+        });
+        
+        dots.forEach((dot, index) => {
+            if (index === 0) {
+                dot.classList.add('active');
+            } else {
+                dot.classList.remove('active');
+            }
+        });
+        
+        // Indítsuk el az automatikus váltást
         startAutoSlide();
     }
 }
