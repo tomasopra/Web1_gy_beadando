@@ -234,7 +234,44 @@ document.addEventListener("DOMContentLoaded", function () {
 
     buttons.forEach(button => {
         button.addEventListener("click", function () {
-            alert("Köszönjük a vásárlást!");
+            alert("Köszönjük a vásárlást! Reméljük, elégedett lesz az új autójával!");
+        });
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+    // Létrehozunk egy modált a képekhez
+    let modal = document.createElement("div");
+    modal.id = "imageModal";
+    modal.style.position = "fixed";
+    modal.style.top = "0";
+    modal.style.left = "0";
+    modal.style.width = "100%";
+    modal.style.height = "100%";
+    modal.style.backgroundColor = "rgba(0, 0, 0, 0.8)";
+    modal.style.display = "none";
+    modal.style.justifyContent = "center";
+    modal.style.alignItems = "center";
+    modal.style.zIndex = "1000";
+
+    let img = document.createElement("img");
+    img.style.width = "70%";
+    img.style.height = "auto";
+    img.style.maxHeight = "95%";
+    modal.appendChild(img);
+
+    modal.addEventListener("click", function () {
+        modal.style.display = "none";
+    });
+
+    document.body.appendChild(modal);
+
+    // Képek kattinthatóságának kezelése
+    document.querySelectorAll(".vasarlastable img").forEach(function (image) {
+        image.style.cursor = "pointer";
+        image.addEventListener("click", function () {
+            img.src = image.src;
+            modal.style.display = "flex";
         });
     });
 });

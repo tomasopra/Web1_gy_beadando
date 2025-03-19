@@ -201,6 +201,7 @@ html {
     border-radius: 8px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
+    border: 3px solid #333;
 }
 
 .referencia-item:hover {
@@ -320,6 +321,7 @@ html {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    border: 3px solid #333;
 }
 
 .szolgaltatas-item:hover {
@@ -353,8 +355,9 @@ html {
 }
 
 .vasarlasbutton {
-    background-color: #205781;
-    color: white;
+    background-color: #98d2c0;
+    font-weight: bold;
+    color: black;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
@@ -364,4 +367,17 @@ html {
 
 .vasarlasbutton:hover {
     background-color: #4F959D;
+}
+
+.vasarlastable p {
+    color: #205781;
+    font-weight: bold;
+}
+
+th, td {
+    border: 3px solid #333;
+}
+
+iframe {
+    border: 3px solid #333;
 }

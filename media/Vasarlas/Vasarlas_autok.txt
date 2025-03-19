@@ -20,7 +20,7 @@
 20 - Datsun 240Z
 21 - Mercedes-Benz 190E 2.0D
 22 - BMW Z4 2.2
-23 - Mercedes – Benz (R107) 450 SLC 1976
+23 - Mercedes–Benz (R107) 450 SLC 1976
 24 - Volkswagen Beetle 1300
 25 - Daihatsu Cuore
 26 - Mercedes-Benz S600 V12
@@ -34,11 +34,58 @@
 34 - Porsche 911 Targa 4S 997.2
 35 - Porsche 911 Cabrio 996.2
 36 - Mercedes-Benz 350 SDL V126
-
-
-
-
-
-
-
-https://veteranautokft.hu/our-cars/
+37 - Volkswagen Corrado G60
+38 - Mercedes-Benz W124 200E 1986
+39 - Mercedes-Benz 500 SL R129 1991
+40 - Mercedes-Benz E280 W124
+41 - Mercedes-Benz 500SL
+42 - Volkswagen Golf II 1,8
+43 - BMW e3 Bavaria 3,0
+44 - BMW 535i
+45 - Porsche 944
+46 - Porsche 968 Cabrio
+47 - Alpina-BMW B12 e38
+48 - Audi Cabrio V6 2,8
+49 - BMW E30 325i Cabriolet
+50 - Aston Martin DB7 V12 Vantage
+51 - Bentley Eight V8 1987
+52 - Mercedes-Benz 190E 2.3 Azzurro Sportline
+53 - Toyota Celica 1992
+54 - Jaguar XJ 4,2 V8 2003
+55 - Mercedes-Benz 190E 2,0
+56 - VolksWagen Golf Rallye G60 Syncro
+57 - Mercedes-Benz G300 D 1980
+58 - Mercedes-Benz E220 T-Kombi S124 1994
+59 - Mercedes-Benz 420SEL V126 Long 1990
+60 - Porsche 911 Carrera 4 Cabriolet 997
+61 - Mercedes-Benz 190E 2,612990
+62 - Velorex 16-350 1967
+63 - Mercedes-Benz E420 w124 1995
+64 - BMW 325i cabrio e30 UK edition
+65 - MG B GT Coupe 1974
+66 - MG T-type 1954
+67 - Range Rover Vogue SE V8 1986
+68 - MG B roadster 1,8 1975
+69 - Alfa Romeo Spider 2,0 Pininfarina 1997
+70 - Mercedes-Benz 500SL R129 1992
+71 - Porsche 911 930 Turbo 1989
+72 - BMW e30 touring 324td 1991
+73 - ZAZ/Jalta/Eliette Zaporozsec 968E
+74 - Rolls-Royce Silver Spur II Long
+75 - Mercedes-Benz C124 Sportline 300-24 Coupe 1992
+76 - Bentley Brooklands R Turbo Long 1997
+77 - Audi 100 Quattro Turbo 44Q
+78 - Alpina-BMW 5er Series B10 3,3 1999
+79 - Audi 100 Avant Quattro 1991
+80 - Audi 100 Avant Quattro 1990 Historical Certification
+81 - Audi 100 Avant Quattro 1989
+82 - Audi 100 Quattro 2,3 1990
+83 - Audi 100 Avant 2,3 1988
+84 - Mercedes-Benz 500 SL R129 1991
+85 - Mercedes-Benz 190 SL 1955
+86 - Ford Mustang T5 1967
+87 - Ford Mustang Shelby GT 500 1967
+88 - Shelby 427 Cobra 1966
+89 - Chevrolet Chevelle 1970
+90 - Dodge Charger 1969
+91 - Chevrolet El Camino 1970
