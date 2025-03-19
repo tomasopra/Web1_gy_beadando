@@ -13,8 +13,8 @@
 /* Invisible hover area */
 .hover-area {
     position: absolute;
-    width: 120px;  /* Adjust hover box size */
-    height: 120px; /* Adjust hover box size */
+    width: 60px;  /* Adjust hover box size */
+    height: 60px; /* Adjust hover box size */
     background: rgba(255, 0, 0, 0); /* Fully transparent */
     cursor: pointer;
 }
@@ -37,13 +37,13 @@
 }
 
 /* Positioning for the first hover area (Top-Left) */
-.hover-area1 { top: 150px; left: 200px; }
-.tooltip1 { top: 120px; left: 190px; }
+.hover-area1 { top: 120px; left: 110px; }
+.tooltip1 { top: 170px; left: 145px; }
 
 /* Positioning for the second hover area (Center) */
-.hover-area2 { top: 500px; left: 450px; }
-.tooltip2 { top: 470px; left: 440px; }
+.hover-area2 { top: 663px; left: 410px; }
+.tooltip2 { top: 723px; left: 445px; }
 
 /* Positioning for the third hover area (Bottom-Right) */
-.hover-area3 { top: 800px; left: 750px; }
+.hover-area3 { top: 820px; left: 740px; }
 .tooltip3 { top: 770px; left: 740px; }
