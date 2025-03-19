@@ -2,7 +2,7 @@
   .image-container {
     position: relative;
     display: inline-block;
-    justify-content: center;
+    
     
 }
 
@@ -10,7 +10,7 @@
 .image-container img {
     display: block;
     width: 1024px; /* Match your image size */
-    justify-content: center;
+    
 }
 
 /* Invisible hover area */
