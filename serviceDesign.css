@@ -1,0 +1,49 @@
+  /* Container to hold the image */
+  .image-container {
+    position: relative;
+    display: inline-block;
+}
+
+/* Image */
+.image-container img {
+    display: block;
+    width: 1024px; /* Match your image size */
+}
+
+/* Invisible hover area */
+.hover-area {
+    position: absolute;
+    width: 120px;  /* Adjust hover box size */
+    height: 120px; /* Adjust hover box size */
+    background: rgba(255, 0, 0, 0); /* Fully transparent */
+    cursor: pointer;
+}
+
+/* Tooltip */
+.tooltip {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 10px 14px;
+    border-radius: 6px;
+    display: none; /* Hidden by default */
+    white-space: nowrap;
+    font-size: 16px;
+}
+
+/* Show tooltip when hovering over the corresponding area */
+.hover-area:hover + .tooltip {
+    display: block;
+}
+
+/* Positioning for the first hover area (Top-Left) */
+.hover-area1 { top: 150px; left: 200px; }
+.tooltip1 { top: 120px; left: 190px; }
+
+/* Positioning for the second hover area (Center) */
+.hover-area2 { top: 500px; left: 450px; }
+.tooltip2 { top: 470px; left: 440px; }
+
+/* Positioning for the third hover area (Bottom-Right) */
+.hover-area3 { top: 800px; left: 750px; }
+.tooltip3 { top: 770px; left: 740px; }
