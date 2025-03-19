@@ -228,3 +228,13 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    const buttons = document.querySelectorAll(".vasarlasbutton");
+
+    buttons.forEach(button => {
+        button.addEventListener("click", function () {
+            alert("Köszönjük a vásárlást!");
+        });
+    });
+});

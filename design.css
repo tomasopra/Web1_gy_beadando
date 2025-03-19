@@ -127,7 +127,7 @@ tr:nth-child(all) td {
 }
 
 td:hover{
-    background-color: #98d2c0;
+    /*background-color: #98d2c0;*/
     color: #205781;
     cursor: default;
 }
@@ -345,4 +345,23 @@ html {
     color: #666;
     line-height: 1.5;
     margin: 0;
+}
+
+.vasarlastable img {
+    width: 100%;
+    height: auto;
+}
+
+.vasarlasbutton {
+    background-color: #205781;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.vasarlasbutton:hover {
+    background-color: #4F959D;
 }
