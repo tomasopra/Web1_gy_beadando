@@ -2,12 +2,15 @@
   .image-container {
     position: relative;
     display: inline-block;
+    justify-content: center;
+    
 }
 
 /* Image */
 .image-container img {
     display: block;
     width: 1024px; /* Match your image size */
+    justify-content: center;
 }
 
 /* Invisible hover area */
@@ -22,13 +25,13 @@
 /* Tooltip */
 .tooltip {
     position: absolute;
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(28, 85, 128, 0.98);
     color: white;
     padding: 10px 14px;
     border-radius: 6px;
     display: none; /* Hidden by default */
     white-space: nowrap;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 /* Show tooltip when hovering over the corresponding area */
@@ -45,5 +48,5 @@
 .tooltip2 { top: 723px; left: 445px; }
 
 /* Positioning for the third hover area (Bottom-Right) */
-.hover-area3 { top: 820px; left: 740px; }
+.hover-area3 { top: 820px; left: 715px; }
 .tooltip3 { top: 770px; left: 740px; }
