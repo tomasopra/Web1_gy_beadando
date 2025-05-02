@@ -240,6 +240,16 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
+    const buttons = document.querySelectorAll(".berlesbutton");
+
+    buttons.forEach(button => {
+        button.addEventListener("click", function () {
+            alert("Köszönjük a bérlést! Reméljük, elégedett lesz az élménnyel!");
+        });
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
     // Létrehozunk egy modált a képekhez
     let modal = document.createElement("div");
     modal.id = "imageModal";
@@ -275,3 +285,4 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 });
+
